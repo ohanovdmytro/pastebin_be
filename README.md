@@ -56,7 +56,7 @@ $ npm run start:prod
 
 ## Authentication
 
-- ### Register
+### Register
 
 - **POST /auth/register**
 - **Request Body:**
@@ -78,7 +78,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Login
+### Login
 
 - **POST /auth/login**
 - **Request Body:**
@@ -104,7 +104,7 @@ $ npm run start:prod
 
 ## Paste Management
 
-- ### Create Paste
+### Create Paste
 
 - **POST /paste**
 - **Request Body:**
@@ -128,7 +128,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Get Paste by ID
+### Get Paste by ID
 
 - **GET /paste/:id**
 - **Response:**
@@ -143,7 +143,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Get Pastes by User
+## Get Pastes by User
 
 - **GET /paste**
 - **Response:**
@@ -167,7 +167,7 @@ $ npm run start:prod
 ]
 ```
 
-- ### Delete Paste
+### Delete Paste
 
 - **DELETE /paste/:id**
 - **Response: 204 No Content**
@@ -175,4 +175,4 @@ $ npm run start:prod
 # Contacts
 
 Author: Dmytro Ohanov
-Telegram: [ohanovdmytro] [https://t.me/ohanovdmytro]
+Telegram: https://t.me/ohanovdmytro
