@@ -166,7 +166,7 @@ $ npm run start:prod
 
 ### Edit Paste
 
-- **GET /paste/:id**
+- **PUT /paste/:id**
 - **Request:**
 
 ```json
