@@ -164,6 +164,29 @@ $ npm run start:prod
 ]
 ```
 
+### Edit Paste
+
+- **GET /paste/:id**
+- **Request:**
+
+```json
+{
+  "title": "My Edited Paste",
+  "content": "This is my edited paste content"
+}
+```
+
+- **Response**
+```json
+{
+  "id": 1,
+  "title": "My Edited Paste",
+  "content": "This is my edited paste content",
+  "userId": 1,
+  "createdAt": "2023-06-01T00:00:00.000Z"
+}
+```
+
 ### Delete Paste
 
 - **DELETE /paste/:id**
