@@ -41,11 +41,6 @@ npx prisma migrate dev --name init
 
 # Running the App
 
-bash
-Copy code
-
-# development
-
 ```bash
 # development
 $ npm run start
