@@ -2,9 +2,6 @@
   <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="Nest Logo" /></a>
 </p>
 <p align="center">A simple <a href="http://nodejs.org" target="_blank">Node.js</a> and <a href="https://nestjs.com/" target="_blank">NestJS</a> based PasteBin application.</p>
-<p align="center">
-<a href="https://www.npmjs.com/" target="_blank"><img src="https://img.shields.io/npm/v/nestjs.svg" alt="NPM Version" /></a>
-</p>
 
 # Description
 

@@ -43,6 +43,36 @@ export class PasteService {
     return pastes;
   }
 
+  async editPaste(
+    id: number,
+    userId: number,
+    title?: string,
+    content?: string,
+  ) {
+    const pasteToEdit = await this.prisma.paste.findUnique({ where: { id: Number(id) } });
+
+    if (!pasteToEdit) {
+      throw new NotFoundException('No paste found');
+    }
+
+    if (pasteToEdit.userId !== userId) {
+      throw new ForbiddenException('Not authorized to edit this paste');
+    }
+
+    try {
+      const editedPaste = await this.prisma.paste.update({
+        where: { id: Number(id) },
+        data: {
+          title: title ?? pasteToEdit.title,
+          content: content ?? pasteToEdit.content,
+        },
+      });
+      return editedPaste;
+    } catch (error) {
+      throw new Error(`Failed to update paste: ${error.message}`);
+    }
+  }
+
   async deletePaste(id: number, userId: number) {
     const paste = await this.prisma.paste.findUnique({
       where: { id: Number(id) },
