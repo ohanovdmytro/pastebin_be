@@ -143,7 +143,7 @@ $ npm run start:prod
 }
 ```
 
-## Get Pastes by User
+### Get Pastes by User
 
 - **GET /paste**
 - **Response:**
@@ -174,5 +174,4 @@ $ npm run start:prod
 
 # Contacts
 
-Author: Dmytro Ohanov
 Telegram: https://t.me/ohanovdmytro
