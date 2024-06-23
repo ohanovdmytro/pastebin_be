@@ -2,9 +2,6 @@
   <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="Nest Logo" /></a>
 </p>
 <p align="center">A simple <a href="http://nodejs.org" target="_blank">Node.js</a> and <a href="https://nestjs.com/" target="_blank">NestJS</a> based PasteBin application.</p>
-<p align="center">
-<a href="https://www.npmjs.com/" target="_blank"><img src="https://img.shields.io/npm/v/nestjs.svg" alt="NPM Version" /></a>
-</p>
 
 # Description
 
@@ -56,7 +53,7 @@ $ npm run start:prod
 
 ## Authentication
 
-- ### Register
+### Register
 
 - **POST /auth/register**
 - **Request Body:**
@@ -78,7 +75,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Login
+### Login
 
 - **POST /auth/login**
 - **Request Body:**
@@ -104,7 +101,7 @@ $ npm run start:prod
 
 ## Paste Management
 
-- ### Create Paste
+### Create Paste
 
 - **POST /paste**
 - **Request Body:**
@@ -128,7 +125,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Get Paste by ID
+### Get Paste by ID
 
 - **GET /paste/:id**
 - **Response:**
@@ -143,7 +140,7 @@ $ npm run start:prod
 }
 ```
 
-- ### Get Pastes by User
+### Get Pastes by User
 
 - **GET /paste**
 - **Response:**
@@ -167,12 +164,11 @@ $ npm run start:prod
 ]
 ```
 
-- ### Delete Paste
+### Delete Paste
 
 - **DELETE /paste/:id**
 - **Response: 204 No Content**
 
 # Contacts
 
-Author: Dmytro Ohanov
-Telegram: [ohanovdmytro] [https://t.me/ohanovdmytro]
+Telegram: https://t.me/ohanovdmytro

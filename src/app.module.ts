@@ -27,6 +27,7 @@ export class AppModule implements NestModule {
         { path: 'paste', method: RequestMethod.POST },
         { path: 'paste', method: RequestMethod.GET },
         { path: 'paste/:id', method: RequestMethod.DELETE },
+        { path: 'paste/:id', method: RequestMethod.PUT },
       );
   }
 }
